@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <div id="header-status" class="text-xs text-gray-400"></div>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Fira+Code&display=swap');
         body { font-family: 'Noto Sans JP', sans-serif; background-color: #f3f4f6; }
@@ -27,7 +29,7 @@
     <!--上部お客様紹介部分-->
     <header class="bg-white border-b px-6 py-3 flex justify-between items-center shrink-0 shadow-sm z-10">
         <div class="flex items-center gap-4">
-            <IMG SRC="https://static.wixstatic.com/media/8b23c7_07d2786b9f894d079a46468012ac8a0c~mv2.png/v1/fill/w_204,h_204,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/N_S%E4%BC%81%E7%94%BB%20%E3%83%AD%E3%82%B4.png" width:20%; height:auto;>
+            <IMG SRC="https://static.wixstatic.com/media/8b23c7_07d2786b9f894d079a46468012ac8a0c~mv2.png/v1/fill/w_204,h_204,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/N_S%E4%BC%81%E7%94%BB%20%E3%83%AD%E3%82%B4.png" "width:20%; height:auto";>
             <div style="
             background-color:#3b82f6;
             color:white;
@@ -60,11 +62,9 @@
                 まな～ぶはN.S企画のお客様システムです。<br>
                 プログラミング学習サービスからお申込みまで、様々なシステムをご利用いただけます。
             </p>
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Document</title>
-            </head>
+            
+
+            
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full">
             <div onclick="app.showCourseSelect()" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all cursor-pointer border-b-8 border-blue-500 transform hover:-translate-y-1">
@@ -497,4 +497,5 @@
 </body>
 
 </html>
+
 
